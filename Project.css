@@ -1,0 +1,967 @@
+/* Global varibales */
+:root {
+    --main-color: #b3b3b3
+   
+}
+
+/* Start Main Rules */
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*  */
+ /* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) { .container{
+   
+    width: 560px;
+} }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { .container{
+    width: 750px;
+} }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { .container{
+    width: 970px;
+} }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px)  { .container{ width: 1170px; } }
+
+/* End Main Rules */
+
+/* header style */
+.header {
+    padding: 10px;
+    background-color: #b3b3b300;
+    margin: 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 160px;
+}
+
+.header .links {
+
+    position: relative;
+}
+
+.header .links .icons {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header .links .icons div {
+    background-color: black;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+.header .links .icons div {
+    background-color: black;
+    height: 3px;
+    margin-bottom: 5px;
+}
+.change .icons1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}           
+
+.change .icons2 {
+    opacity: 0;
+}
+
+.change .icons3 {
+    transform: rotate(45deg) translate(-3.5px, -3.5px);
+   
+}
+
+.header .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    right: 0;
+    background-color: #1d1a1a;
+    min-width: 200px;    
+    z-index: 1;
+    width: 190px ;
+    height: 210px;
+    position: absolute;
+    bottom: -230px;
+
+}
+
+.header .links ul li  { 
+            margin-left: 10px ;
+            margin-bottom: 0px;
+            padding:8px;  
+            width: 1px; 
+            transition-timing-function: linear;
+           
+        }
+.header .links ul li p {    
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin: 0px ;
+            transition: .3s;
+            width: 2px;
+            cursor: pointer;
+            padding: 8px;
+}
+.header .links ul li:first-child p {
+    
+    margin-top: 10px;
+ 
+ 
+    
+}
+.header .links ul li:first-child:hover p {
+    
+    transition: .3s;
+    margin-left: 10px;
+    border-bottom: solid 2px white;
+     width: 60px;
+     transition: .5s;
+}
+.header .links ul li:nth-child(2):hover p {
+    
+    transition: .3s;
+    margin-left: 10px;
+    border-bottom: solid 2px white;
+     width: 80px;
+     transition: .5s;
+}
+.header .links ul li:nth-child(3):hover p {
+    
+    transition: .3s;
+    margin-left: 10px;
+    border-bottom: solid 2px white;
+     width: 60px;
+     transition: .5s;
+}
+.header .links ul li:last-child:hover p {
+    
+    transition: .3s;
+    margin-left: 10px;
+    border-bottom: solid 2px white;
+     width: 80px;
+     transition: .5s;
+}
+
+
+
+    /* .header .links ul li:not(:last-child) p {
+        border-bottom: solid 2px black;
+
+    } */
+
+
+/* End of header style */
+
+/* Start of Landing style */
+.landing {  
+    background-image: url(../images/background.jpg);
+
+    background-size: cover;
+    margin: 0;
+    height: 600px;
+    
+  
+   
+
+}      
+.landing .container .intro h2 {
+        display:  flex;
+        font-size: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        min-width: 200px;
+        line-height: 1.8;
+                
+       
+
+}      
+.landing .container .intro  {
+        padding-bottom: 120px;
+
+}     
+   
+
+.landing .container .intro p {
+    display: inline-flex;
+    font-size: 20px;
+    border-bottom: solid 2px black;
+    padding: 40px;
+    margin-left: 39%;
+
+}     
+.landing .container .intro h2 {
+   color: black;
+   background-color:rgba(255, 255, 255, 0.356) ;
+    border: solid wpx black;
+    border-radius: 10px;
+
+}     
+.landing .container .intro a {
+    display: inline-flex;
+    border: solid 2px black;
+    border-radius: 0px;
+    margin-left: 44%;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    background-color:rgb(255, 255, 255) ;
+    font-size: 20px;
+    
+    
+
+}
+      .landing .container .intro a:hover {
+    background-color: rgb(0, 0, 0);
+    transition: .3S;
+    color: white;
+    
+}
+.space {
+    padding: 0;
+    background-color: black;
+    height: 120px;
+    
+}
+.space ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: white;
+        margin: 0;
+        padding: 46px;
+       
+}
+.space ul a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 30px;
+    font-weight: bold;
+    color: black;
+    
+    
+
+}
+.space ul a:hover {
+  background-image: radial-gradient(black,white);
+  color: white;
+  transition: .3s;
+}
+     
+/* End of Landing style */
+
+/* Start of Beginning style */
+.beginning {
+  padding: 0;
+  margin: 0;
+    
+    
+
+}
+.beginning .container  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+
+
+}
+
+.beginning .container h2 {
+    padding-top: 100px;
+
+
+}
+
+.beginning .container .our-beginning h4 {
+    color: rgb(165, 165, 165);
+    padding-bottom: 30px;
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-radius: 10px;
+    width: 30%;
+
+
+}
+
+.beginning .container .our-beginning h4:last-child {
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    transition: .3s;
+    margin-top: 10%;
+    
+}
+.beginning .container .our-beginning p  {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 22px;
+}
+.beginning .container .our-beginning h4:last-child:hover {
+        font-size: 18px;
+        padding: 20px;
+        width: 35%;
+        background-color:  rgb(0, 0, 0);
+        color: white;
+}
+
+
+/* End of Beginning style */
+
+/* Start of space1 style */
+.space1 {
+    background-color: black;
+    height: 200px;
+}
+
+.space1 P {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
+.space1 a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    transition: .3s;
+}
+
+.space1 a img:hover {
+        height: 100px;
+        width: 150px;
+        
+}
+/* End of space1 style */
+
+/* Start of Portfolio */
+
+.portfolio {
+    text-align: center;
+    height: 1350px;
+
+}
+.portfolio .container h1 {
+    padding-top: 30px;
+   
+    
+    
+
+}
+.portfolio .container h3 {
+    color: rgb(165, 165, 165) ;
+    border-bottom: solid 2px black;
+    display: inline-flex;
+    padding-bottom: 40px;
+    margin-top: -40px;
+   
+}
+
+.portfolio .container p {
+    padding: 60px;
+   
+}
+
+.portfolio .container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.portfolio .container li {
+    
+    padding: 20px ;
+    margin: 20px;
+    
+}
+
+
+.portfolio .container li  {
+    
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+}
+.portfolio .container .types li:first-child  {
+    
+   background-color: black;
+   color: white;
+    
+   
+}
+
+ .portfolio .container li {
+
+    border: solid 2px black;
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
+/* .portfolio .container a:hover {
+
+    color: white;
+    background-color: black;
+    
+} */
+
+.portfolio .lists {
+position: relative;
+background-color: transparent;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+
+.portfolio .container .lists .list1  div {
+    
+    background-color: rgb(18, 59, 44);
+    text-align: center;
+    padding: 130px;
+
+    
+}
+.portfolio .container .lists .list2  div {
+    
+    background-color: rgb(30, 24, 73);
+    text-align: center;
+    padding: 130px;
+
+    
+}
+.portfolio .container .lists .list3  div {
+    
+    background-color: rgb(53, 17, 17);
+    text-align: center;
+    padding: 130px;
+
+    
+}
+.portfolio .container .lists .list1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 30px;
+    transition: transform .5s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+   
+    
+}
+
+
+.portfolio .container .lists .list2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 30px;
+    transition: transform .1s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+ 
+}
+.portfolio .container .lists .list3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 30px;
+    transition: transform .5s;  
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    
+
+}
+
+.portfolio .container .lists .list2 div:first-child {
+  
+background-image: url(../images/photography1.jpg);
+background-size: cover;
+}
+.portfolio .container .lists .list2 div:nth-child(2) {
+  
+background-image: url(../images/photography2\ \(1\).jpg);
+background-size: cover;
+   }
+
+.portfolio .container .lists .list2 div:nth-child(3) {
+  
+    background-image: url(../images/photography2\ \(2\).jpg);
+ background-size: cover;
+ }
+.portfolio .container .lists .list2 div:nth-child(4) {
+  
+    background-image: url(../images/photography2\ \(3\).jpg);
+      background-size: cover;
+  }
+.portfolio .container .lists .list2 div:nth-child(5) {
+  
+    background-image: url(../images/photography2\ \(4\).jpg);
+    background-size: cover;
+  }
+.portfolio .container .lists .list2 div:nth-child(6) {
+  
+     background-image: url(../images/photography3.jpg);
+     background-size: cover;
+  }
+
+ .portfolio .container .lists .list3 div:first-child {
+  
+      background-image: url(../images/web\ \(1\).jpg);
+     background-size: cover;
+ }    
+.portfolio .container .lists .list3 div:nth-child(2) {
+  
+     background-image: url(../images/web\ \(2\).jpg);
+    background-size: cover;
+  }  
+.portfolio .container .lists .list3 div:nth-child(3) {
+  
+     background-image: url(../images/web\ \(3\).jpg);
+     background-size: cover;
+  }  
+.portfolio .container .lists .list3 div:nth-child(4) {
+  
+     background-image: url(../images/web\ \(4\).jpg);
+     background-size: cover;
+   }  
+.portfolio .container .lists .list3 div:nth-child(5) {
+  
+        background-image: url(../images/web\ \(5\).jpg);
+        background-size: cover;
+    }  
+.portfolio .container .lists .list3 div:nth-child(6) {
+  
+   background-image: url(../images/web\ \(6\).jpg);
+          background-size: cover;
+  }  
+
+
+  .portfolio .container .lists .list1 div:nth-child(1) {
+  
+    background-image: url(../images/brand\ \(1\).jpg);
+           background-size: cover;
+   } 
+   .portfolio .container .lists .list1 div:nth-child(2) {
+  
+    background-image: url(../images/brand\ \(2\).jpg);
+           background-size: cover;
+   } 
+   .portfolio .container .lists .list1 div:nth-child(3) {
+  
+    background-image: url(../images/brand\ \(3\).jpg);
+           background-size: cover;
+   } 
+   .portfolio .container .lists .list1 div:nth-child(4) {
+  
+    background-image: url(../images/brand\ \(4\).jpg);
+           background-size: cover;
+   } 
+   .portfolio .container .lists .list1 div:nth-child(5) {
+  
+    background-image: url(../images/brand\ \(5\).jpg);
+           background-size: cover;
+   } 
+.portfolio .container .lists .list1 div:nth-child(6) {
+  
+   background-image: url(../images/brand\ \(6\).jpg);
+          background-size: cover;
+  } 
+.seemore {
+
+    border: solid 2px black;
+    position: relative;
+    margin-top: 60%;
+    margin-left: 45%;
+    width: 150px;
+    padding: 15px;
+
+}
+.seemore a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.seemore:hover {
+
+   background-color: black;
+}
+.seemore:hover a {
+
+    color: white;
+}
+
+
+
+
+
+
+/* End of Portfolio */
+
+/* start of space2 */
+
+.space2 {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    height: 320px;
+}
+.space2 img {
+
+        margin-top: 3%;
+}
+.space2 img:hover {
+    width: 150px;
+    height: 100px;
+}
+
+.space2 h3{
+    display: flex;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-left: 280px;
+    padding: 30px;
+}
+
+.space2 h4{
+    color: white;
+}
+/* End of space2 */
+
+/* start of about */
+.about {
+    text-align: center;
+    height: 1000px;
+
+}
+
+.about .container h3:nth-child(2) {
+    color: rgb(165, 165, 165) ;
+    border-bottom: solid 2px black;
+    display: inline-flex;
+    padding-bottom: 40px;
+    margin-top: -40px;
+   
+}
+
+.about .container .lists0 {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    grid-gap: 30px;
+    transition: .5s;
+}
+  .card {
+    background-color: transparent;
+    width: 250px;
+    height: 285px;
+    
+  }
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+  }
+  
+  .card:hover .inner {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  
+  .back {
+    background-color: #000000;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 60px;
+    text-align: start;
+    margin-top: 200px;
+}
+
+.about-us h3 {
+    color: black;
+    border-bottom: solid 2px black;
+    display: inline-flex;
+    padding-bottom: 40px;
+    margin-top: -40px;
+
+}
+
+.about-us p {
+
+    width: 350px;
+}
+
+
+/* End of about */
+
+/* Start sub */
+
+.sub {
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+}
+.sub p {
+    color: white;
+    padding-top: 65px;
+    font-size: 22px;
+}
+.email {
+    height: 51PX;
+    width: 70%;
+    padding: 10px 0px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+
+}
+
+.submit2 {
+
+    width: 20%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 14px 0px;
+    margin: 8px 8px 8px 8px;
+    border: none;
+    cursor: pointer;
+
+
+
+}
+/* end sub */
+
+/* Start aboutus */
+.aboutus {
+    text-align: center;
+
+}
+
+.aboutus .container h1 {
+   padding-top: 60PX;
+   
+}
+
+.aboutus .container h3 {
+    color: rgb(165, 165, 165) ;
+    border-bottom: solid 2px black;
+    display: inline-flex;
+    padding-bottom: 40px;
+    margin-top: -40px;
+   
+}
+
+.aboutus ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.aboutus ul li:not(firstchild) {
+    padding-top: 150px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+}
+
+.aboutus p {
+    color: rgb(165, 165, 165);
+    padding: 20px;
+    text-align: center;
+}
+
+.form {
+   position: relative;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    height: 400px;
+
+}
+
+
+
+
+
+
+
+#SUBJECT {
+width: 50%;
+padding: 12px 20px;
+margin: 20px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+display: flex;
+align-items: flex-start;
+}
+
+
+#NAME {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+align-items: flex-start;
+    }
+
+    
+#EMAIL {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+align-items: flex-start;
+    }
+
+    .textarea {
+        display: flex;
+        position: relative;
+        left: 600PX;
+        bottom: 190PX;
+
+    }
+
+    
+
+    
+
+    .submit {
+
+        width: 20%;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 14px 20px;
+        margin: 8px 8px 8px 120px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        left: 41%;
+        bottom: 160px;
+
+    }
+
+/* End aboutus */
+
+/* start of footer */
+.footer {
+    background-color: black;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer ul li {
+    padding: 20px;
+}
+
+.footer p {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* End of footer */
+
